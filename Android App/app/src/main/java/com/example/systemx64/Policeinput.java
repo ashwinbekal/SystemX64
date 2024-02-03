@@ -1,5 +1,6 @@
 package com.example.systemx64;
 
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
@@ -53,40 +54,37 @@ public class Policeinput extends AppCompatActivity {
         dataList2 = dataList;
 
 
-        // Call your test method
+
         List<HashMap<String, Integer>> result = test("RAPE", "ANDHRA PRADESH", "NELLORE", 2011, "Male", "STRIKE", 52);
 
-        // Log the top 5 districts along with their crime counts
+
+        List<String> districtList = new ArrayList<>(); // Create a new list to store district values
         for (int i = 0; i < Math.min(5, result.size()); i++) {
             HashMap<String, Integer> map = result.get(i);
             for (String district : map.keySet()) {
                 int crimeCount = map.get(district);
-
-                list.put("District",district);
-                list.put("Murder Count",crimeCount);
-
                 Log.d("TopDistricts", district + ": " + crimeCount);
+                districtList.add(district); // Add the district to the list
             }
         }
-        for (Map.Entry<String, Object> entry : list.entrySet()) {
-            String key = entry.getKey();
-            if (key.equals("District")) {
-                String valueString = (String) entry.getValue();
-                arr = new ArrayList<>();
-                arr.add(valueString);
-            }
+        for (String district : districtList) {
+            Log.d("DistrictValue", district);
+        }
+
+
+
+        for(String a:arr){
+            Log.d("aval",a);
+
+
         }
 
         int j=0;
-        for(String a:arr){
-            main3(a);
-
-
-
-
-
+        for (String district : districtList) {
+            main3(district);
         }
-        logOrProcessLatLng(uu);
+
+
 
 
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.choices, R.layout.custom_spinner_dropdown_item);
@@ -101,24 +99,24 @@ public class Policeinput extends AppCompatActivity {
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 String selectedItem = parent.getItemAtPosition(position).toString();
 
-                // Do something with the selected item
+
             }
 
             @Override
             public void onNothingSelected(AdapterView<?> parent) {
-                // Handle no selection
+
             }
         });
         spinner1.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 String selectedItem = parent.getItemAtPosition(position).toString();
-                // Do something with the selected item
+
             }
 
             @Override
             public void onNothingSelected(AdapterView<?> parent) {
-                // Handle no selection
+
             }
         });
 
@@ -149,7 +147,7 @@ public class Policeinput extends AppCompatActivity {
             }
         }
 
-        // Sort the top districts based on crime count
+
         topDistricts.sort(new Comparator<HashMap<String, Integer>>() {
             @Override
             public int compare(HashMap<String, Integer> o1, HashMap<String, Integer> o2) {
@@ -157,20 +155,20 @@ public class Policeinput extends AppCompatActivity {
             }
         });
 
-        // Return the top districts list
+
         return topDistricts.subList(0, Math.min(5, topDistricts.size()));
     }
 
     private Data convertToData(String[] rowData) {
-        // Assuming the structure of each row in dataList is appropriate for your CSV file
+
         String state = rowData[0];
         String district = rowData[1];
         int crimeCount = 0;
         try {
-            // Assuming the crime count is at index 32
+
             crimeCount = Integer.parseInt(rowData[3]);
         } catch (NumberFormatException e) {
-            // Handle the case where parsing fails, e.g., if the value is not a valid integer
+
             e.printStackTrace();
         }
         return new Data(state, district, crimeCount);
@@ -215,19 +213,29 @@ public class Policeinput extends AppCompatActivity {
 
         @Override
         protected void onPostExecute(LatLng latLng) {
-            // Handle the result here
+
             Log.d("Coordinates", latLng.toString());
-            uu.add(latLng); // Add the LatLng to the list
+            uu.add(latLng);
+            if (uu.size() == arr.size()) {
+                // All LatLng values have been obtained, so log or process them here
+                logOrProcessLatLng(uu);
+            }
         }
     }
     private void logOrProcessLatLng(ArrayList<LatLng> uu) {
         for (LatLng latLng : uu) {
-            // Log or process each LatLng here
+
             Log.d("LatLng", latLng.latitude + ", " + latLng.longitude);
         }
     }
 
     public void main3(String placeName) {
         new GeocodingTask().execute(placeName);
+    }
+    public void Onclicksubmit(View V){
+        Intent intent=new Intent(Policeinput.this,MapActivity.class);
+        intent.putExtra("locationlist",uu);
+        startActivity(intent);
+        
     }
 }
