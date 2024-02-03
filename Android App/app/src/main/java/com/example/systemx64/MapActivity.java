@@ -24,6 +24,11 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
     public ArrayList<String> districtList;
     public ArrayList<String> stateList;
     public ArrayList<Integer> rapeCountList;
+    public ArrayList<Integer>  kidnapcount;
+    public ArrayList<Integer> crueltycount;
+    public ArrayList<Integer> dowrycount;
+    public ArrayList<Integer> burglary;
+    public ArrayList<Integer> dacoity;
     public int year;
     public String crimetype;
 
@@ -38,6 +43,12 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
             crimetype=getIntent().getStringExtra("Crimetype");
             stateList = extras.getStringArrayList("statelist");
             year = extras.getInt("Year");
+          dacoity=extras.getIntegerArrayList("dacoity");
+          kidnapcount=extras.getIntegerArrayList("kidnaplist");
+          crueltycount=extras.getIntegerArrayList("crueltylist");
+          burglary=extras.getIntegerArrayList("burglary");
+          dowrycount=extras.getIntegerArrayList("dowrylist");
+
 
             rapeCountList = extras.getIntegerArrayList("rapecountlist");
         }
@@ -76,8 +87,13 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
         builder.setTitle("Marker Details")
                 .setMessage(
                         "District: " + districtList.get(position) + "\n" +
-                        crimetype+" Count: " + rapeCountList.get(position)+"\n"+
-                        "Year: "+year)
+                        "Murder Count: " + rapeCountList.get(position)+"\n"+
+                        "Year: "+year+"\n"+
+                        "Kidnap Count: "+kidnapcount.get(position)+"\n"+
+                        "CRUELTY BY HUSBAND: "+crueltycount.get(position)+"\n"+
+                        "Dowry Death Count: "+dowrycount.get(position)+"\n"+
+                         "Burglary: "+burglary.get(position)+"\n"+
+                        "Dacoity Count: "+dacoity.get(position))
                 .setPositiveButton("OK", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
