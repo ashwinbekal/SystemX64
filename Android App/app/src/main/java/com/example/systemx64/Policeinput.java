@@ -129,6 +129,9 @@ public class Policeinput extends AppCompatActivity {
                 if(uu.size()!=0){
                     Intent intent=new Intent(Policeinput.this,MapActivity.class);
                     intent.putExtra("locationlist",uu);
+                    intent.putExtra("districtlist",districts);
+                    intent.putExtra("statelist",states);
+                    intent.putExtra("rapecountlist",rapeCounts);
                     logOrProcessLatLng(uu);
                     startActivity(intent);
                     finish();
@@ -319,7 +322,7 @@ public class Policeinput extends AppCompatActivity {
                         Data innerRow = convertToData(innerRowData);
                         if (innerRow.getState().equals(state) && innerRow.getDistrict().equals(currentDistrict)) {
                             totalIPCcrimes += innerRow.getCrimeCount();
-                            if (innerRow.equals("RAPE")) {
+                            if (innerRow.getState().equals(state) && innerRow.getDistrict().equals(currentDistrict)) {
                                 rapeCount += innerRow.getCrimeCount();
                             }
                             // Update other attributes accordingly
