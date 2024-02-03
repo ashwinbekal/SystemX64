@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&family=Vina+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@700&display=swap');
+body{
+    background: url("/static/network-concept.jpg") no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+/* @media(max-width:650px){
+    body{
+        padding-top: 50%;
+    }
+} */
+.phish{
+    font-family: 'Mukta', sans-serif;
+}
+
+.phishhead{
+    color: goldenrod;
+    font-family: 'Mukta', sans-serif;
+    font-size: 100px;
+}
+
+.header{
+    backdrop-filter: blur(8px);
+    border-radius: 15px;
+}
+.test{
+    backdrop-filter: blur(8px);
+    border-radius: 15px;
+}
+.place::placeholder{
+    color: rgb(180, 174, 174);
+    font-family: 'Source Code Pro', monospace;
+}
+.form-control.place{
+    background: url("/static/network-concept.jpg");
+    backdrop-filter: blur(8px);
+    color: antiquewhite;
+}
+.input-group-text.domain{
+    background: url("/static/network-concept.jpg");
+    backdrop-filter: blur(8px);
+    color: antiquewhite;
+}
