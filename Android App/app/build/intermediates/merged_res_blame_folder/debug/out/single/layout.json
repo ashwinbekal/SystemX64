@@ -1,0 +1,42 @@
+[
+    {
+        "merged": "C:\\Users\\MOHAMMAD ANZIL\\.gradle\\daemon\\8.0\\com.example.systemx64.app-mergeDebugResources-35:\\layout\\activity_profilenamephoto.xml",
+        "source": "C:\\Users\\MOHAMMAD ANZIL\\.gradle\\daemon\\8.0\\com.example.systemx64.app-main-38:\\layout\\activity_profilenamephoto.xml"
+    },
+    {
+        "merged": "com.example.systemx64.app-mergeDebugResources-35:/layout/activity_policeinput.xml",
+        "source": "com.example.systemx64.app-main-38:/layout/activity_policeinput.xml"
+    },
+    {
+        "merged": "C:\\Users\\MOHAMMAD ANZIL\\.gradle\\daemon\\8.0\\com.example.systemx64.app-mergeDebugResources-35:\\layout\\custom_spinner_dropdown_item2.xml",
+        "source": "C:\\Users\\MOHAMMAD ANZIL\\.gradle\\daemon\\8.0\\com.example.systemx64.app-main-38:\\layout\\custom_spinner_dropdown_item2.xml"
+    },
+    {
+        "merged": "C:\\Users\\MOHAMMAD ANZIL\\.gradle\\daemon\\8.0\\com.example.systemx64.app-mergeDebugResources-35:\\layout\\activity_otp_verify.xml",
+        "source": "C:\\Users\\MOHAMMAD ANZIL\\.gradle\\daemon\\8.0\\com.example.systemx64.app-main-38:\\layout\\activity_otp_verify.xml"
+    },
+    {
+        "merged": "C:\\Users\\MOHAMMAD ANZIL\\.gradle\\daemon\\8.0\\com.example.systemx64.app-mergeDebugResources-35:\\layout\\custom_spinner_dropdown_item.xml",
+        "source": "C:\\Users\\MOHAMMAD ANZIL\\.gradle\\daemon\\8.0\\com.example.systemx64.app-main-38:\\layout\\custom_spinner_dropdown_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\MOHAMMAD ANZIL\\.gradle\\daemon\\8.0\\com.example.systemx64.app-mergeDebugResources-35:\\layout\\activity_sign_in.xml",
+        "source": "C:\\Users\\MOHAMMAD ANZIL\\.gradle\\daemon\\8.0\\com.example.systemx64.app-main-38:\\layout\\activity_sign_in.xml"
+    },
+    {
+        "merged": "C:\\Users\\MOHAMMAD ANZIL\\.gradle\\daemon\\8.0\\com.example.systemx64.app-mergeDebugResources-35:\\layout\\activity_otp_send.xml",
+        "source": "C:\\Users\\MOHAMMAD ANZIL\\.gradle\\daemon\\8.0\\com.example.systemx64.app-main-38:\\layout\\activity_otp_send.xml"
+    },
+    {
+        "merged": "C:\\Users\\MOHAMMAD ANZIL\\.gradle\\daemon\\8.0\\com.example.systemx64.app-mergeDebugResources-35:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\MOHAMMAD ANZIL\\.gradle\\daemon\\8.0\\com.example.systemx64.app-main-38:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\MOHAMMAD ANZIL\\.gradle\\daemon\\8.0\\com.example.systemx64.app-mergeDebugResources-35:\\layout\\activity_policeinput.xml",
+        "source": "C:\\Users\\MOHAMMAD ANZIL\\.gradle\\daemon\\8.0\\com.example.systemx64.app-main-38:\\layout\\activity_policeinput.xml"
+    },
+    {
+        "merged": "C:\\Users\\MOHAMMAD ANZIL\\.gradle\\daemon\\8.0\\com.example.systemx64.app-mergeDebugResources-35:\\layout\\activity_register.xml",
+        "source": "C:\\Users\\MOHAMMAD ANZIL\\.gradle\\daemon\\8.0\\com.example.systemx64.app-main-38:\\layout\\activity_register.xml"
+    }
+]
