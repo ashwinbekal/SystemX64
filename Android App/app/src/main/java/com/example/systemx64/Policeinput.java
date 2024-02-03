@@ -34,10 +34,26 @@ public class Policeinput extends AppCompatActivity {
     double latitude,longitude;
     ArrayList<String> arr;
     ArrayList<LatLng> uu;
+    int ryear;
+    ArrayList<Integer> rkidnap ;
+    ArrayList<Integer> rdacoity;
+    ArrayList<Integer> rdowry;
+    ArrayList<Integer> rcruelty ;
+    ArrayList<Integer> rburglary;
+
+
+
+
+
+
+
     ArrayList<String> states ;
+    ArrayList<Integer> simple ;
+    ArrayList<Integer> yearr ;
+
     ArrayList<String> districts ;
     ArrayList<Integer> rapeCounts;
-    String crimetypee,statee,districtee;
+    String crimetypee,statee,districtee,sex;
     int yearee;
     private static final String ARC_GIS_URL = "https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer/findAddressCandidates";
     Map<String ,Object> list = new HashMap<>();
@@ -56,8 +72,17 @@ public class Policeinput extends AppCompatActivity {
 
         String fileName = "exxx.csv";
         arr = new ArrayList<>();
+      yearr = new ArrayList<>();
         uu = new ArrayList<>();
         states = new ArrayList<>();
+        rburglary=new ArrayList<>();
+        rcruelty=new ArrayList<>();
+        rdowry=new ArrayList<>();
+        rdacoity=new ArrayList<>();
+        rkidnap=new ArrayList<>();
+
+
+        simple = new ArrayList<>();
         districts = new ArrayList<>();
         rapeCounts = new ArrayList<>();
 
@@ -84,7 +109,7 @@ public class Policeinput extends AppCompatActivity {
             public void onClick(View v) {
 
                 // Call the test method with selected values from dropdowns
-                List<HashMap<String, Integer>> result = test(crimetypee, statee, districtee, yearee, "Male", "STRIKE", 52);
+                List<HashMap<String, Integer>> result = test("RAPE", statee, districtee, yearee, sex, "STRIKE", 52);
 
 
 // ArrayLists to store state, district, and rape count
@@ -101,6 +126,8 @@ public class Policeinput extends AppCompatActivity {
                     HashMap<String, Integer> map = result.get(i);
                     for (String district : map.keySet()) {
                         int crimeCount = map.get(district);
+                        simple.add(crimeCount);
+
                         Log.d("TopDistricts", district + ": " + crimeCount);
                         districtList.add(district); // Add the district to the list
                     }
@@ -117,8 +144,16 @@ public class Policeinput extends AppCompatActivity {
                     Intent intent=new Intent(Policeinput.this,MapActivity.class);
                     intent.putExtra("locationlist",uu);
                     intent.putExtra("districtlist",districts);
+                    intent.putExtra("Crimetype",crimetypee);
+                    intent.putExtra("Year",ryear);
+                    intent.putExtra("dowrylist",rdowry);
+                    intent.putExtra("kidnaplist",rkidnap);
+                    intent.putExtra("crueltylist",rcruelty);
+                    intent.putExtra("burglary",rburglary);
+                    intent.putExtra("dacoity",rdacoity);
 
-                    intent.putExtra("rapecountlist",rapeCounts);
+
+                    intent.putExtra("rapecountlist",simple);
                     logOrProcessLatLng(uu);
                     startActivity(intent);
                     finish();
@@ -160,8 +195,8 @@ public class Policeinput extends AppCompatActivity {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 String selectedItem = parent.getItemAtPosition(position).toString();
-                crimetypee = selectedItem;
-                Log.i("crimetype", crimetypee);
+                sex = selectedItem;
+                Log.i("Sex", sex);
             }
 
             @Override
@@ -196,17 +231,53 @@ public class Policeinput extends AppCompatActivity {
 
                 if (!addedDistricts.contains(currentDistrict)) {
                     int crimeCount = 0;
+                    int rapeCount=0;
+                    int robberyCount=0;
+                    int kidnapcount=0;
+                    int crueltycount=0;
+                    int dowrycount=0;
+                    int burglary=0;
+                    int dacoity=0;
+                    int year1=0;
                     for (String[] innerRowData : dataList2) {
                         Data innerRow = convertToData(innerRowData);
+                        String m="MURDER";
                         if (innerRow.getState().equals(state) && innerRow.getDistrict().equals(currentDistrict)) {
-                            crimeCount += innerRow.getCrimeCount();
+
+
+                                crimeCount += innerRow.getCrimeCount();
+                                rapeCount=innerRow.getRapecount();
+                                robberyCount=innerRow.getRobberyCount();
+                                year1=innerRow.getYear();
+                                kidnapcount=innerRow.getKidnapcount();
+                                crueltycount=innerRow.getCruelty();
+                                dowrycount=innerRow.getDowrycount();
+                                dacoity=innerRow.getDacotycount();
+
+
+
+
+
+
+
+
+
+
+
                         }
                     }
                     HashMap<String, Integer> districtMap = new HashMap<>();
                     districtMap.put(currentDistrict, crimeCount);
 
                     districts.add(currentDistrict);
+                    yearr.add(year1);
                     rapeCounts.add(crimeCount);
+                    rkidnap.add(kidnapcount);
+                    rdowry.add(dowrycount);
+                    rdacoity.add(dacoity);
+                    rburglary.add(burglary);
+                    rcruelty.add(crueltycount);
+                    ryear=year;
                     topDistricts.add(districtMap);
                     addedDistricts.add(currentDistrict);
                 }
@@ -226,7 +297,74 @@ public class Policeinput extends AppCompatActivity {
 
         String state = rowData[0];
         String district = rowData[1];
+        int burglary=0;
+
+        int rapeCount= 0;
+        int year=0;
+
         int crimeCount = 0;
+        int robberycount=0;
+        int dacoty=0;
+        int kidnapcount=0;
+        int dowrydeath=0;
+        int burgalry=0;
+        int cruelty=0;
+        try {
+            cruelty= Integer.parseInt(rowData[12]);
+        } catch (NumberFormatException e) {
+
+            e.printStackTrace();
+        }
+        try {
+            burgalry= Integer.parseInt(rowData[8]);
+        } catch (NumberFormatException e) {
+
+            e.printStackTrace();
+        }
+        try {
+            dowrydeath= Integer.parseInt(rowData[7]);
+        } catch (NumberFormatException e) {
+
+            e.printStackTrace();
+        }
+        try {
+            dacoty= Integer.parseInt(rowData[6]);
+        } catch (NumberFormatException e) {
+
+            e.printStackTrace();
+        }
+        try {
+            kidnapcount= Integer.parseInt(rowData[5]);
+        } catch (NumberFormatException e) {
+
+            e.printStackTrace();
+        }
+        try {
+            burglary= Integer.parseInt(rowData[8]);
+        } catch (NumberFormatException e) {
+
+            e.printStackTrace();
+        }
+        try {
+        year= Integer.parseInt(rowData[2]);
+        } catch (NumberFormatException e) {
+
+            e.printStackTrace();
+        }
+        try {
+
+            rapeCount = Integer.parseInt(rowData[7]);
+        } catch (NumberFormatException e) {
+
+            e.printStackTrace();
+        }
+        try {
+
+            robberycount = Integer.parseInt(rowData[5]);
+        } catch (NumberFormatException e) {
+
+            e.printStackTrace();
+        }
         try {
 
             crimeCount = Integer.parseInt(rowData[3]);
@@ -234,7 +372,7 @@ public class Policeinput extends AppCompatActivity {
 
             e.printStackTrace();
         }
-        return new Data(state, district, crimeCount);
+        return new Data(state, district, crimeCount,rapeCount,robberycount,year,kidnapcount,dacoty,dowrydeath,cruelty,burglary);
     }
     private class GeocodingTask extends AsyncTask<String, Void, LatLng> {
         @Override
