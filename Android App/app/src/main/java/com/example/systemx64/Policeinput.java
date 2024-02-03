@@ -1,5 +1,6 @@
 package com.example.systemx64;
 
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -9,16 +10,32 @@ import android.widget.Spinner;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.android.gms.maps.model.LatLng;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
+import java.net.URL;
+import java.net.URLEncoder;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
+import java.util.Map;
 import java.util.Set;
 
 public class Policeinput extends AppCompatActivity {
     public String crimetype,state,district,year,season,age;
+
     List<String[]> dataList2;
+    double latitude,longitude;
+    ArrayList<String> arr;
+    ArrayList<LatLng> uu;
+    private static final String ARC_GIS_URL = "https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer/findAddressCandidates";
+    Map<String ,Object> list = new HashMap<>();
+    int i=0;
 
 
 
@@ -29,8 +46,12 @@ public class Policeinput extends AppCompatActivity {
         Spinner spinner = findViewById(R.id.State);
         Spinner spinner1=findViewById(R.id.district);
         String fileName = "exxx.csv";
-        List<String[]> dataList = com.example.myapplicationdh.CSVReader.readCSV(Policeinput.this, fileName);
+        arr = new ArrayList<>();
+        uu = new ArrayList<>();
+
+        List<String[]> dataList = com.example.systemx64.CSVReader.readCSV(Policeinput.this, fileName);
         dataList2 = dataList;
+
 
         // Call your test method
         List<HashMap<String, Integer>> result = test("RAPE", "ANDHRA PRADESH", "NELLORE", 2011, "Male", "STRIKE", 52);
@@ -40,9 +61,33 @@ public class Policeinput extends AppCompatActivity {
             HashMap<String, Integer> map = result.get(i);
             for (String district : map.keySet()) {
                 int crimeCount = map.get(district);
+
+                list.put("District",district);
+                list.put("Murder Count",crimeCount);
+
                 Log.d("TopDistricts", district + ": " + crimeCount);
             }
         }
+        for (Map.Entry<String, Object> entry : list.entrySet()) {
+            String key = entry.getKey();
+            if (key.equals("District")) {
+                String valueString = (String) entry.getValue();
+                arr = new ArrayList<>();
+                arr.add(valueString);
+            }
+        }
+
+        int j=0;
+        for(String a:arr){
+            main3(a);
+
+
+
+
+
+        }
+        logOrProcessLatLng(uu);
+
 
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.choices, R.layout.custom_spinner_dropdown_item);
         ArrayAdapter<CharSequence> adapter1 = ArrayAdapter.createFromResource(this, R.array.choices2, R.layout.custom_spinner_dropdown_item);
@@ -78,6 +123,7 @@ public class Policeinput extends AppCompatActivity {
         });
 
     }
+
     private List<HashMap<String, Integer>> test(String crimetype, String state, String district, int year, String gender, String season, int age) {
         List<HashMap<String, Integer>> topDistricts = new ArrayList<>();
         Set<String> addedDistricts = new HashSet<>();
@@ -129,5 +175,59 @@ public class Policeinput extends AppCompatActivity {
         }
         return new Data(state, district, crimeCount);
     }
+    private class GeocodingTask extends AsyncTask<String, Void, LatLng> {
+        @Override
+        protected LatLng doInBackground(String... strings) {
+            String placeName = strings[0];
 
+            double latitude = 0, longitude = 0;
+
+            try {
+                URL url = new URL(ARC_GIS_URL + "?singleLine=" + URLEncoder.encode(placeName, "UTF-8") + "&f=json&maxLocations=1");
+                HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+                conn.setRequestMethod("GET");
+
+                BufferedReader br = new BufferedReader(new InputStreamReader(conn.getInputStream()));
+                StringBuilder response = new StringBuilder();
+                String line;
+                while ((line = br.readLine()) != null) {
+                    response.append(line);
+                }
+                conn.disconnect();
+
+                // Parse JSON response to get latitude and longitude
+                String jsonResponse = response.toString();
+                int latIndex = jsonResponse.indexOf("\"y\":") + 4;
+                int longIndex = jsonResponse.indexOf("\"x\":") + 4;
+                int endIndex = jsonResponse.indexOf("}", latIndex);
+                latitude = Double.parseDouble(jsonResponse.substring(latIndex, endIndex));
+                longitude = Double.parseDouble(jsonResponse.substring(longIndex, jsonResponse.indexOf(",", longIndex)));
+
+                Log.d("Latitude", String.valueOf(latitude));
+                Log.d("Longitude", String.valueOf(longitude));
+
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+
+            return new LatLng(latitude, longitude);
+        }
+
+        @Override
+        protected void onPostExecute(LatLng latLng) {
+            // Handle the result here
+            Log.d("Coordinates", latLng.toString());
+            uu.add(latLng); // Add the LatLng to the list
+        }
+    }
+    private void logOrProcessLatLng(ArrayList<LatLng> uu) {
+        for (LatLng latLng : uu) {
+            // Log or process each LatLng here
+            Log.d("LatLng", latLng.latitude + ", " + latLng.longitude);
+        }
+    }
+
+    public void main3(String placeName) {
+        new GeocodingTask().execute(placeName);
+    }
 }
