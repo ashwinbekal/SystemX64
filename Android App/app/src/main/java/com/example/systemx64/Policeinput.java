@@ -28,12 +28,14 @@ import java.util.Map;
 import java.util.Set;
 
 public class Policeinput extends AppCompatActivity {
-    public String crimetype,state,district,year,season,age;
+
 
     List<String[]> dataList2;
     double latitude,longitude;
     ArrayList<String> arr;
     ArrayList<LatLng> uu;
+    String crimetypee,statee,districtee;
+    int yearee;
     private static final String ARC_GIS_URL = "https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer/findAddressCandidates";
     Map<String ,Object> list = new HashMap<>();
     int i=0;
@@ -46,6 +48,9 @@ public class Policeinput extends AppCompatActivity {
         setContentView(R.layout.activity_policeinput);
         Spinner spinner = findViewById(R.id.State);
         Spinner spinner1=findViewById(R.id.district);
+        Spinner spinner2=findViewById(R.id.crimetype);
+        Spinner spinner3=findViewById(R.id.date);
+
         String fileName = "exxx.csv";
         arr = new ArrayList<>();
         uu = new ArrayList<>();
@@ -56,7 +61,6 @@ public class Policeinput extends AppCompatActivity {
 
 
         List<HashMap<String, Integer>> result = test("RAPE", "ANDHRA PRADESH", "NELLORE", 2011, "Male", "STRIKE", 52);
-
 
         List<String> districtList = new ArrayList<>(); // Create a new list to store district values
         for (int i = 0; i < Math.min(5, result.size()); i++) {
@@ -89,15 +93,23 @@ public class Policeinput extends AppCompatActivity {
 
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.choices, R.layout.custom_spinner_dropdown_item);
         ArrayAdapter<CharSequence> adapter1 = ArrayAdapter.createFromResource(this, R.array.choices2, R.layout.custom_spinner_dropdown_item);
+        ArrayAdapter<CharSequence> adapter2 = ArrayAdapter.createFromResource(this, R.array.choices3, R.layout.custom_spinner_dropdown_item);
+        ArrayAdapter<CharSequence> adapter3 = ArrayAdapter.createFromResource(this, R.array.choices4, R.layout.custom_spinner_dropdown_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+
         adapter1.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        adapter2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 
         spinner1.setAdapter((adapter1));
         spinner.setAdapter(adapter);
+        spinner2.setAdapter(adapter2);
+        spinner3.setAdapter(adapter3);
         spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 String selectedItem = parent.getItemAtPosition(position).toString();
+                statee=selectedItem;
+                Log.i("state",statee);
 
 
             }
@@ -111,6 +123,9 @@ public class Policeinput extends AppCompatActivity {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 String selectedItem = parent.getItemAtPosition(position).toString();
+                districtee=selectedItem;
+                Log.i("district",districtee);
+
 
             }
 
@@ -119,6 +134,34 @@ public class Policeinput extends AppCompatActivity {
 
             }
         });
+        spinner2.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                String selectedItem = parent.getItemAtPosition(position).toString();
+                crimetypee=selectedItem;
+                Log.i("crimetype",crimetypee);
+
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+        spinner3.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+                String selectedItem = (String) adapterView.getItemAtPosition(i);
+                yearee = Integer.parseInt(selectedItem);
+                Log.i("Year", String.valueOf(yearee));
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> adapterView) {
+
+            }
+        });
+
 
     }
 
@@ -236,6 +279,6 @@ public class Policeinput extends AppCompatActivity {
         Intent intent=new Intent(Policeinput.this,MapActivity.class);
         intent.putExtra("locationlist",uu);
         startActivity(intent);
-        
+
     }
 }
