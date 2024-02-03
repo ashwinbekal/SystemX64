@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIR Information</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/bootstrap.min.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='styles.css')}}">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&family=Vina+Sans&display=swap" rel="stylesheet">
+    <link rel="icon" href="../static/anchor.png" type="image/x-icon">
+
+</head>
+
+<body class="vh-100">
+    <div class="col d-flex align-items-center justify-content-center" style="min-height: 100vh;">
+        <form action="/" method="post">
+            <div class="p-5 py-1 pt-5">
+                <div style="width: 1700px;" class="test border border-white p-3 ">
+                    <h1 class="phishhead text-center px-5 pt-2 pb-2">e-FIR Filing System</h1>
+                    <h2 class="phish text-white text-white px-5 pt-3 pb-2">Your Personal Information</h2>
+                    <div class="input-group input-group-lg mb-3 pt-2 px-5">
+                        <input type="text" class="form-control place" autofocus placeholder="Enter your First Name" aria-label="Username" aria-describedby="basic-addon1" name="fname">&ensp;&ensp;
+                        <input type="text" class="form-control place" autofocus placeholder="Enter your Last Name" aria-label="Username" aria-describedby="basic-addon1" name="lname">&ensp;&ensp;
+                        <input type="text" class="form-control place" autofocus placeholder="Enter your Contact Number" aria-label="Username" aria-describedby="basic-addon1" name="cnumber">                 
+                    </div>
+                    <div class="input-group input-group-lg mb-3 pt-2 px-5">
+                        <input type="text"  class="form-control place" autofocus placeholder="Enter your Age" aria-label="Username" aria-describedby="basic-addon1" name="age">&ensp;&ensp;<input type="text"  class="form-control place" autofocus placeholder="Enter your Residential Address" aria-label="Username" aria-describedby="basic-addon1" name="resaddress">                   
+                    </div>
+                    
+                    <hr class="px-5" style="color: antiquewhite; ">
+
+
+                    <h2 class="phish text-white text-white px-5 pt-2 pb-2">Nature of the Incident</h2>
+                    
+                    <div style="width: 1700px; display: flex;" class="px-5 pt-3 pb-2">
+                        <label for="date-time"></label>
+                        <input style="width: 790px;" type="datetime-local" id="date-time" class="form-control-lg place" name="date-time" required onfocus="(this.type='datetime-local')" onblur="(this.type='text')" placeholder="Date & Time of Incident" value="" name="dt">&ensp;&ensp;
+                        <input style="width: 790px;" type="text" class="form-control place" autofocus placeholder="Location of Incident" aria-label="Username" aria-describedby="basic-addon1" name="locincident">&ensp;&ensp;
+                        <input type="text" class="form-control place" autofocus placeholder="Type of Incident" aria-label="Username" aria-describedby="basic-addon1" name="tyincident">
+                    </div>
+                    <hr class="px-5" style="color: antiquewhite; ">
+                    <div class="input-group input-group-lg mb-3 pt-2 px-2">
+                                           
+                             
+                    </div>
+                    <h2 class="phish text-white text-white px-5 pt-2 pb-2">Description of the Incident and Victim</h2>
+                    <div class="input-group input-group-lg mb-3 pt-2 px-5">
+                        <input type="text" class="form-control place" autofocus placeholder="Describe about the Incident" aria-label="Username" aria-describedby="basic-addon1" name="descincident">&ensp;&ensp;
+                        <input type="text" class="form-control place" autofocus placeholder="Injuries, Damages, or Losses" aria-label="Username" aria-describedby="basic-addon1" name="sufferings">                   
+                             
+                    </div>
+                    <hr class="px-5" style="color: antiquewhite; ">
+                    <h2 class="phish text-white text-white px-5 pt-3 pb-2">Description of the Perpetrator(s)</h2>
+                    <div class="input-group input-group-lg mb-3 pt-2 px-5">
+                        <input type="text" class="form-control place" autofocus placeholder="Incident Description" aria-label="Perpetrator Description" aria-describedby="basic-addon1" name="perpdesc">&ensp;&ensp;
+                        <input type="text" class="form-control place" autofocus placeholder="Perpetrator Name/Nickname" aria-label="Username" aria-describedby="basic-addon1" name="perpnick">                   
+                             
+                    </div>
+
+                    <hr class="px-5" style="color: antiquewhite; ">
+                    <h2 class="phish text-white text-white px-5 pt-3 pb-2">Proof/Evidence</h2>
+                    <div class="input-group input-group-lg mb-3 pt-2 px-5">
+                        <input type="text" class="form-control place" autofocus placeholder="Brief the Proof/Evidence" aria-label="Perpetrator Description" aria-describedby="basic-addon1" name="crimebrief">&ensp;&ensp;
+                        <div>
+                            <input style="width: 900px;" class="form-control form-control-lg place" id="formFileLg" type="file" name="evidence">
+                          </div>                  
+                             
+                    </div>
+                    <hr class="px-5" style="color: antiquewhite; "><br><br>
+                    <center>
+
+                        <button type="submit" class="btn btn-success">
+                            <h3>SUBMIT FIR</h3>
+                        </button>
+                    </center>
+                    <div class="input-group input-group-lg mb-3 px-2">
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </form>
+    </div>
+
+    <script>
+        function copyIP(){
+            var text=document.getElementById('copy-ip');
+            var range=document.createRange();
+            range.selectNode(text);
+            window.getSelection().removeAllRanges();
+            window.getSelection().addRange(range);
+            document.execCommand('copy');
+            window.getSelection().removeAllRanges();
+            alert('IP Address '+text.innerText+' successfully copied!')
+        }
+
+    </script>
+</body>
+
+</html>
