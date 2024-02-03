@@ -1,0 +1,1031 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="main$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\p\systemx64\app\src\main\res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="main" generated-set="main$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\p\systemx64\app\src\main\res"><file name="border" path="C:\p\systemx64\app\src\main\res\drawable\border.xml" qualifiers="" type="drawable"/><file name="border_left" path="C:\p\systemx64\app\src\main\res\drawable\border_left.xml" qualifiers="" type="drawable"/><file name="border_right" path="C:\p\systemx64\app\src\main\res\drawable\border_right.xml" qualifiers="" type="drawable"/><file name="cr18bff55d077" path="C:\p\systemx64\app\src\main\res\drawable\cr18bff55d077.xml" qualifiers="" type="drawable"/><file name="cr20bff1d1d1d" path="C:\p\systemx64\app\src\main\res\drawable\cr20bff1d1d1d.xml" qualifiers="" type="drawable"/><file name="ecclipse" path="C:\p\systemx64\app\src\main\res\drawable\ecclipse.png" qualifiers="" type="drawable"/><file name="eye" path="C:\p\systemx64\app\src\main\res\drawable\eye.png" qualifiers="" type="drawable"/><file name="ic_launcher_background" path="C:\p\systemx64\app\src\main\res\drawable\ic_launcher_background.xml" qualifiers="" type="drawable"/><file name="logo" path="C:\p\systemx64\app\src\main\res\drawable\logo.png" qualifiers="" type="drawable"/><file name="sff000000sw1bff1d1d1d" path="C:\p\systemx64\app\src\main\res\drawable\sff000000sw1bff1d1d1d.xml" qualifiers="" type="drawable"/><file name="sff525252sw1cr8" path="C:\p\systemx64\app\src\main\res\drawable\sff525252sw1cr8.xml" qualifiers="" type="drawable"/><file name="sffffffffsw1cr18" path="C:\p\systemx64\app\src\main\res\drawable\sffffffffsw1cr18.xml" qualifiers="" type="drawable"/><file name="sffffffffsw1cr18bff55d077" path="C:\p\systemx64\app\src\main\res\drawable\sffffffffsw1cr18bff55d077.xml" qualifiers="" type="drawable"/><file name="upload" path="C:\p\systemx64\app\src\main\res\drawable\upload.png" qualifiers="" type="drawable"/><file name="ic_launcher_foreground" path="C:\p\systemx64\app\src\main\res\drawable-v24\ic_launcher_foreground.xml" qualifiers="v24" type="drawable"/><file name="activity_main" path="C:\p\systemx64\app\src\main\res\layout\activity_main.xml" qualifiers="" type="layout"/><file name="activity_otp_send" path="C:\p\systemx64\app\src\main\res\layout\activity_otp_send.xml" qualifiers="" type="layout"/><file name="activity_otp_verify" path="C:\p\systemx64\app\src\main\res\layout\activity_otp_verify.xml" qualifiers="" type="layout"/><file name="activity_policeinput" path="C:\p\systemx64\app\src\main\res\layout\activity_policeinput.xml" qualifiers="" type="layout"/><file name="activity_profilenamephoto" path="C:\p\systemx64\app\src\main\res\layout\activity_profilenamephoto.xml" qualifiers="" type="layout"/><file name="activity_register" path="C:\p\systemx64\app\src\main\res\layout\activity_register.xml" qualifiers="" type="layout"/><file name="activity_sign_in" path="C:\p\systemx64\app\src\main\res\layout\activity_sign_in.xml" qualifiers="" type="layout"/><file name="ic_launcher" path="C:\p\systemx64\app\src\main\res\mipmap-anydpi-v26\ic_launcher.xml" qualifiers="anydpi-v26" type="mipmap"/><file name="ic_launcher_round" path="C:\p\systemx64\app\src\main\res\mipmap-anydpi-v26\ic_launcher_round.xml" qualifiers="anydpi-v26" type="mipmap"/><file name="ic_launcher" path="C:\p\systemx64\app\src\main\res\mipmap-hdpi\ic_launcher.webp" qualifiers="hdpi-v4" type="mipmap"/><file name="ic_launcher_round" path="C:\p\systemx64\app\src\main\res\mipmap-hdpi\ic_launcher_round.webp" qualifiers="hdpi-v4" type="mipmap"/><file name="ic_launcher" path="C:\p\systemx64\app\src\main\res\mipmap-mdpi\ic_launcher.webp" qualifiers="mdpi-v4" type="mipmap"/><file name="ic_launcher_round" path="C:\p\systemx64\app\src\main\res\mipmap-mdpi\ic_launcher_round.webp" qualifiers="mdpi-v4" type="mipmap"/><file name="ic_launcher" path="C:\p\systemx64\app\src\main\res\mipmap-xhdpi\ic_launcher.webp" qualifiers="xhdpi-v4" type="mipmap"/><file name="ic_launcher_round" path="C:\p\systemx64\app\src\main\res\mipmap-xhdpi\ic_launcher_round.webp" qualifiers="xhdpi-v4" type="mipmap"/><file name="ic_launcher" path="C:\p\systemx64\app\src\main\res\mipmap-xxhdpi\ic_launcher.webp" qualifiers="xxhdpi-v4" type="mipmap"/><file name="ic_launcher_round" path="C:\p\systemx64\app\src\main\res\mipmap-xxhdpi\ic_launcher_round.webp" qualifiers="xxhdpi-v4" type="mipmap"/><file name="ic_launcher" path="C:\p\systemx64\app\src\main\res\mipmap-xxxhdpi\ic_launcher.webp" qualifiers="xxxhdpi-v4" type="mipmap"/><file name="ic_launcher_round" path="C:\p\systemx64\app\src\main\res\mipmap-xxxhdpi\ic_launcher_round.webp" qualifiers="xxxhdpi-v4" type="mipmap"/><file path="C:\p\systemx64\app\src\main\res\values\arraystate.xml" qualifiers=""><string-array name="choices">
+        <item>KARNATAKA</item>
+        <item>LAKSHADWEEP</item>
+        <item>UTTAR PRADESH</item>
+        <item>SIKKIM</item>
+        <item>WEST BENGAL</item>
+        <item>MADHYA PRADESH</item>
+        <item>UTTARAKHAND</item>
+        <item>A &amp; N ISLANDS</item>
+        <item>CHANDIGARH</item>
+        <item>TAMIL NADU</item>
+        <item>ASSAM</item>
+        <item>NAGALAND</item>
+        <item>PUNJAB</item>
+        <item>ANDHRA PRADESH</item>
+        <item>GOA</item>
+        <item>D &amp; N HAVELI</item>
+        <item>PUDUCHERRY</item>
+        <item>ODISHA</item>
+        <item>MIZORAM</item>
+        <item>HIMACHAL PRADESH</item>
+        <item>BIHAR</item>
+        <item>HARYANA</item>
+        <item>JHARKHAND</item>
+        <item>DAMAN &amp; DIU</item>
+        <item>ARUNACHAL PRADESH</item>
+        <item>DELHI UT</item>
+        <item>GUJARAT</item>
+        <item>MEGHALAYA</item>
+        <item>MANIPUR</item>
+        <item>JAMMU &amp; KASHMIR</item>
+        <item>KERALA</item>
+        <item>CHHATTISGARH</item>
+        <item>RAJASTHAN</item>
+        <item>TRIPURA</item>
+        <item>MAHARASHTRA</item>
+    </string-array><string-array name="choices2">
+        <item>24 PARGANAS NORTH</item>
+        <item>24 PARGANAS SOUTH</item>
+        <item>A and N ISLANDS</item>
+        <item>ADILABAD</item>
+        <item>AGRA</item>
+        <item>AHMEDABAD COMMR.</item>
+        <item>AHMEDABAD RURAL</item>
+        <item>AHMEDNAGAR</item>
+        <item>AHWA-DANG</item>
+        <item>AIZAWL</item>
+        <item>AJMER</item>
+        <item>AKOLA</item>
+        <item>ALAPUZHA</item>
+        <item>ALIGARH</item>
+        <item>ALIRAJPUR</item>
+        <item>ALLAHABAD</item>
+        <item>ALMORA</item>
+        <item>ALWAR</item>
+        <item>AMBALA</item>
+        <item>AMBALA RURAL</item>
+        <item>AMBALA URBAN</item>
+        <item>AMBEDKAR NAGAR</item>
+        <item>AMRAVATI COMMR.</item>
+        <item>AMRAVATI RURAL</item>
+        <item>AMRELI</item>
+        <item>AMRITSAR</item>
+        <item>AMRITSAR RURAL</item>
+        <item>ANAND</item>
+        <item>ANANTAPUR</item>
+        <item>ANANTNAG</item>
+        <item>ANDAMAN</item>
+        <item>ANGUL</item>
+        <item>ANJAW</item>
+        <item>ANUPPUR</item>
+        <item>ARARIA</item>
+        <item>ARIYALUR</item>
+        <item>ARWAL</item>
+        <item>ASANSOL</item>
+        <item>ASHOK NAGAR</item>
+        <item>AURAIYA</item>
+        <item>AURANGABAD</item>
+        <item>AURANGABAD COMMR.</item>
+        <item>AURANGABAD RURAL</item>
+        <item>AWANTIPORA</item>
+        <item>AZAMGARH</item>
+        <item>BADAUN</item>
+        <item>BADDIPOLICEDIST</item>
+        <item>BAGAHA</item>
+        <item>BAGALKOT</item>
+        <item>BAGESHWAR</item>
+        <item>BAGHPAT</item>
+        <item>BAHRAICH</item>
+        <item>BAKSA</item>
+        <item>BALAGHAT</item>
+        <item>BALASORE</item>
+        <item>BALLIA</item>
+        <item>BALOD</item>
+        <item>BALODA BAZAR</item>
+        <item>BALRAMPUR</item>
+        <item>BANDA</item>
+        <item>BANDIPORA</item>
+        <item>BANGALORE COMMR.</item>
+        <item>BANGALORE RURAL</item>
+        <item>BANKA</item>
+        <item>BANKURA</item>
+        <item>BANSWARA</item>
+        <item>BARABANKI</item>
+        <item>BARAGARH</item>
+        <item>BARAMULLA</item>
+        <item>BARAN</item>
+        <item>BAREILLY</item>
+        <item>BARMER</item>
+        <item>BARNALA</item>
+        <item>BARPETA</item>
+        <item>BARWANI</item>
+        <item>BASKA</item>
+        <item>BASTI</item>
+        <item>BATALA</item>
+        <item>BDN CP</item>
+        <item>BEED</item>
+        <item>BEGUSARAI</item>
+        <item>BELGAUM</item>
+        <item>BELLARY</item>
+        <item>BEMETARA</item>
+        <item>BERHAMPUR</item>
+        <item>BETTIAH</item>
+        <item>BETUL</item>
+        <item>BHABHUA</item>
+        <item>BHADRAK</item>
+        <item>BHAGALPUR</item>
+        <item>BHANDARA</item>
+        <item>BHARATPUR</item>
+        <item>BHARUCH</item>
+        <item>BHATINDA</item>
+        <item>BHAVNAGAR</item>
+        <item>BHILWARA</item>
+        <item>BHIM NAGAR</item>
+        <item>BHIND</item>
+        <item>BHIWANI</item>
+        <item>BHOJPUR</item>
+        <item>BHOPAL</item>
+        <item>BHOPAL RLY.</item>
+        <item>BIDAR</item>
+        <item>BIEO</item>
+        <item>BIJAPUR</item>
+        <item>BIJNOR</item>
+        <item>BIKANER</item>
+        <item>BILASPUR</item>
+        <item>BIRBHUM</item>
+        <item>BISHNUPUR</item>
+        <item>BIZAPUR</item>
+        <item>BKP CP</item>
+        <item>BOKARO</item>
+        <item>BOLANGIR</item>
+        <item>BONGAIGAON</item>
+        <item>BORDER</item>
+        <item>BORDER DISTRICT</item>
+        <item>BOUDH</item>
+        <item>BUDGAM</item>
+        <item>BULANDSHAHAR</item>
+        <item>BULDHANA</item>
+        <item>BUNDI</item>
+        <item>BURDWAN</item>
+        <item>BURHANPUR</item>
+        <item>BUXAR</item>
+        <item>C.I.D.</item>
+        <item>CACHAR</item>
+        <item>CAR</item>
+        <item>CAW</item>
+        <item>CBCID</item>
+        <item>CBPURA</item>
+        <item>CENTRAL</item>
+        <item>CHAIBASA</item>
+        <item>CHAMARAJNAGAR</item>
+        <item>CHAMBA</item>
+        <item>CHAMOLI</item>
+        <item>CHAMPAWAT</item>
+        <item>CHAMPHAI</item>
+        <item>CHANDEL</item>
+        <item>CHANDIGARH</item>
+        <item>CHANDOLI</item>
+        <item>CHANDRAPUR</item>
+        <item>CHANGLANG</item>
+        <item>CHATRA</item>
+        <item>CHENGAI</item>
+        <item>CHENNAI</item>
+        <item>CHENNAI RLY.</item>
+        <item>CHENNAISUBURBAN</item>
+        <item>CHHATARPUR</item>
+        <item>CHHINDWARA</item>
+        <item>CHICKMAGALUR</item>
+        <item>CHIRANG</item>
+        <item>CHITRADURGA</item>
+        <item>CHITRAKOOT DHAM</item>
+        <item>CHITTOOR</item>
+        <item>CHITTORGARH</item>
+        <item>CHURACHANDPUR</item>
+        <item>CHURU</item>
+        <item>CID</item>
+        <item>CID CRIME</item>
+        <item>COIMBATORE RURAL</item>
+        <item>COIMBATORE URBAN</item>
+        <item>COOCHBEHAR</item>
+        <item>CP AMRITSAR</item>
+        <item>CP JALANDHAR</item>
+        <item>CP LUDHIANA</item>
+        <item>CRIME BRANCH</item>
+        <item>CRIME JAMMU</item>
+        <item>CRIME KASHMIR</item>
+        <item>CRIME SRINAGAR</item>
+        <item>CSM NAGAR</item>
+        <item>CUDDALORE</item>
+        <item>CUDDAPAH</item>
+        <item>CUTTACK</item>
+        <item>CYBERABAD</item>
+        <item>D and N HAVELI</item>
+        <item>DAHOD</item>
+        <item>DAKSHIN DINAJPUR</item>
+        <item>DAKSHIN KANNADA</item>
+        <item>DAMAN</item>
+        <item>DAMOH</item>
+        <item>DANTEWARA</item>
+        <item>DARBHANGA</item>
+        <item>DARJEELING</item>
+        <item>DARRANG</item>
+        <item>DATIYA</item>
+        <item>DAUSA</item>
+        <item>DAVANAGERE</item>
+        <item>DCP BBSR</item>
+        <item>DCP CTC</item>
+        <item>DEHRADUN</item>
+        <item>DELHI UT TOTAL</item>
+        <item>DEOGARH</item>
+        <item>DEOGHAR</item>
+        <item>DEORIA</item>
+        <item>DEWAS</item>
+        <item>DHALAI</item>
+        <item>DHAMTARI</item>
+        <item>DHANBAD</item>
+        <item>DHANBAD RLY.</item>
+        <item>DHAR</item>
+        <item>DHARMAPURI</item>
+        <item>DHARWAD COMMR.</item>
+        <item>DHARWAD RURAL</item>
+        <item>DHEMAJI</item>
+        <item>DHENKANAL</item>
+        <item>DHOLPUR</item>
+        <item>DHUBRI</item>
+        <item>DHULE</item>
+        <item>DIBANG VALLEY</item>
+        <item>DIBRUGARH</item>
+        <item>DIMAPUR</item>
+        <item>DINDIGUL</item>
+        <item>DINDORI</item>
+        <item>DIU</item>
+        <item>DODA</item>
+        <item>DUMKA</item>
+        <item>DUNGARPUR</item>
+        <item>DURG</item>
+        <item>EAST</item>
+        <item>EAST GODAVARI</item>
+        <item>EOW</item>
+        <item>ERNAKULAM</item>
+        <item>ERNAKULAM COMMR.</item>
+        <item>ERNAKULAM RURAL</item>
+        <item>ERODE</item>
+        <item>ETAH</item>
+        <item>ETAWAH</item>
+        <item>FAIZABAD</item>
+        <item>FARIDABAD</item>
+        <item>FARIDKOT</item>
+        <item>FATEHABAD</item>
+        <item>FATEHGARH</item>
+        <item>FATEHGARH SAHIB</item>
+        <item>FATEHPUR</item>
+        <item>FAZILKA</item>
+        <item>FEROZEPUR</item>
+        <item>FEROZPUR</item>
+        <item>FIROZABAD</item>
+        <item>G.R.P</item>
+        <item>G.R.P.</item>
+        <item>G.R.P. AJMER</item>
+        <item>G.R.P. JODHPUR</item>
+        <item>G.R.P.(RLY)</item>
+        <item>G.R.P.AJMER</item>
+        <item>G.R.P.JODHPUR</item>
+        <item>GADAG</item>
+        <item>GADCHIROLI</item>
+        <item>GAJAPATI</item>
+        <item>GANDERBAL</item>
+        <item>GANDHINAGAR</item>
+        <item>GANGANAGAR</item>
+        <item>GANJAM</item>
+        <item>GARHWA</item>
+        <item>GARIYABAND</item>
+        <item>GARO HILLS EAST</item>
+        <item>GARO HILLS SOUTH</item>
+        <item>GARO HILLS WEST</item>
+        <item>GAUTAMBUDH NAGAR</item>
+        <item>GAYA</item>
+        <item>GHAZIABAD</item>
+        <item>GHAZIPUR</item>
+        <item>GIRIDIH</item>
+        <item>GOALPARA</item>
+        <item>GODDA</item>
+        <item>GOLAGHAT</item>
+        <item>GOMATI</item>
+        <item>GONDA</item>
+        <item>GONDIA</item>
+        <item>GOPALGANJ</item>
+        <item>GORAKHPUR</item>
+        <item>GRP</item>
+        <item>GRP RAIPUR</item>
+        <item>GRP(RLY)</item>
+        <item>GULBARGA</item>
+        <item>GUMLA</item>
+        <item>GUNA</item>
+        <item>GUNTAKAL RLY.</item>
+        <item>GUNTUR</item>
+        <item>GUNTUR URBAN</item>
+        <item>GURDASPUR</item>
+        <item>GURGAON</item>
+        <item>GUWAHATI CITY</item>
+        <item>GWALIOR</item>
+        <item>GYANPUR</item>
+        <item>HAJIPUR</item>
+        <item>HAMIRPUR</item>
+        <item>HANUMANGARH</item>
+        <item>HAPUR</item>
+        <item>HARDA</item>
+        <item>HARDOI</item>
+        <item>HARIDWAR</item>
+        <item>HASSAN</item>
+        <item>HATHRAS</item>
+        <item>HATKANANGLE</item>
+        <item>HAVERI</item>
+        <item>HAWRAH</item>
+        <item>HIMATNAGAR</item>
+        <item>HINGOLI</item>
+        <item>HISAR</item>
+        <item>HOOGHLY</item>
+        <item>HOOGHLY CITY</item>
+        <item>HOOGHLY RURAL</item>
+        <item>HOSHIARPUR</item>
+        <item>HOSPET</item>
+        <item>HOSUR</item>
+        <item>HOWRAH</item>
+        <item>HUBLI</item>
+        <item>HUDA</item>
+        <item>HUDSON LINES</item>
+        <item>HUMNABAD</item>
+        <item>ICD LDH</item>
+        <item>IMPHAL EAST</item>
+        <item>IMPHAL WEST</item>
+        <item>INDIA GATE</item>
+        <item>INDORE</item>
+        <item>INDORE RLY.</item>
+        <item>J and K TOTAL</item>
+        <item>Jabalpur COMMR.</item>
+        <item>Jabalpur RURAL</item>
+        <item>JABALPUR URBAN</item>
+        <item>JAGATSINGHAPUR</item>
+        <item>JAGDALPUR</item>
+        <item>JAIPUR COMMR.</item>
+        <item>JAIPUR RURAL</item>
+        <item>JAISALMER</item>
+        <item>JALALABAD</item>
+        <item>JALAUN</item>
+        <item>JALGAON</item>
+        <item>JALGAON RLY.</item>
+        <item>JALNA</item>
+        <item>JALORE</item>
+        <item>JALPAIGURI</item>
+        <item>JAMMU</item>
+        <item>JAMNAGAR</item>
+        <item>JAMSHEDPUR</item>
+        <item>JAMTARA</item>
+        <item>JAMUI</item>
+        <item>JANJGIR-CHAMPA</item>
+        <item>JANSPUR</item>
+        <item>JAUNPUR</item>
+        <item>JAWAI</item>
+        <item>JEHANABAD</item>
+        <item>JHABUA</item>
+        <item>JHAGADIA</item>
+        <item>JHANSI</item>
+        <item>JHARGRAM</item>
+        <item>JHARSUGUDA</item>
+        <item>JHUNJHUNU</item>
+        <item>JIND</item>
+        <item>JODHPUR</item>
+        <item>JORHAT</item>
+        <item>JP NAGAR</item>
+        <item>JUNAGADH</item>
+        <item>KADAPA</item>
+        <item>KAIMUR</item>
+        <item>KAMRUP</item>
+        <item>KAMRUP METRO</item>
+        <item>KANCHIPURAM</item>
+        <item>KANDHAMAL</item>
+        <item>KANNAUJ</item>
+        <item>KANNIYAKUMARI</item>
+        <item>KANPUR COMMR.</item>
+        <item>KANPUR NAGAR</item>
+        <item>KANPUR RURAL</item>
+        <item>KANSAI</item>
+        <item>KANYAKUMARI</item>
+        <item>KAPURTHALA</item>
+        <item>KARAIKAL</item>
+        <item>KARAIKUDI</item>
+        <item>KARAULI</item>
+        <item>KARBI ANGLONG</item>
+        <item>KARGIL</item>
+        <item>KARIMGANJ</item>
+        <item>KARIMNAGAR</item>
+        <item>KARNAL</item>
+        <item>KARUR</item>
+        <item>KARWAR</item>
+        <item>KASHIPUR</item>
+        <item>KATHUA</item>
+        <item>KATIHAR</item>
+        <item>KATNI</item>
+        <item>KATRA</item>
+        <item>KATWA</item>
+        <item>KAWARDHA</item>
+        <item>KENDRAPARA</item>
+        <item>KENDUJHAR</item>
+        <item>KEONJHAR</item>
+        <item>KERALA TOTAL</item>
+        <item>KHAMMAM</item>
+        <item>KHANDWA</item>
+        <item>KHARGONE</item>
+        <item>KHEDA</item>
+        <item>KHERI</item>
+        <item>KHOWAI</item>
+        <item>KINNAUR</item>
+        <item>KIPHIRE</item>
+        <item>KISHANGANJ</item>
+        <item>KISHANGANJ COMMR.</item>
+        <item>KISHTWAR</item>
+        <item>KODAGU</item>
+        <item>KODERMA</item>
+        <item>KOHIMA</item>
+        <item>KOKRAJHAR</item>
+        <item>KOLAR</item>
+        <item>KOLASIB</item>
+        <item>KOLHAPUR</item>
+        <item>KOLKATA</item>
+        <item>KOLLAM</item>
+        <item>KOPPAL</item>
+        <item>KORAPUT</item>
+        <item>KORBA</item>
+        <item>KORIYA</item>
+        <item>KOTA</item>
+        <item>KOTTAYAM</item>
+        <item>KOVILPATTI</item>
+        <item>KRISHNAGIRI</item>
+        <item>KRISHNANAGAR</item>
+        <item>KRISHNAPURAM</item>
+        <item>KULGAM</item>
+        <item>KULGAM COMMR.</item>
+        <item>KULLU</item>
+        <item>KUPWARA</item>
+        <item>KURNOOL</item>
+        <item>KURUKSHETRA</item>
+        <item>KURUNG KUMEY</item>
+        <item>KUSHI NAGAR</item>
+        <item>KUTCH COMMR.</item>
+        <item>KVS</item>
+        <item>L.E.O.</item>
+        <item>L.R.U</item>
+        <item>LADAKH</item>
+        <item>LAKHIMPUR</item>
+        <item>LAKSHADWEEP</item>
+        <item>LALITPUR</item>
+        <item>LANSDOWN</item>
+        <item>LATEHAR</item>
+        <item>LATUR</item>
+        <item>LEH</item>
+        <item>LIBERTY PARK</item>
+        <item>LIGRIJA</item>
+        <item>LIMBDI</item>
+        <item>LOHARDAGA</item>
+        <item>LOHIT</item>
+        <item>LONGLENG</item>
+        <item>LOWER DIBANG VALLEY</item>
+        <item>LOWER SUBANSIRI</item>
+        <item>LUCKNOW COMMR.</item>
+        <item>LUDHIANA</item>
+        <item>LUDHIANA RURAL</item>
+        <item>LUNAWADA</item>
+        <item>M.P. RAILWAY</item>
+        <item>M.P.RAILWAY</item>
+        <item>MADHEPURA</item>
+        <item>MADHUBANI</item>
+        <item>MADIKERI</item>
+        <item>MADURAI</item>
+        <item>MAHABUBNAGAR</item>
+        <item>MAHASAMUND</item>
+        <item>MAHBUBNAGAR</item>
+        <item>MAHOBA</item>
+        <item>MAHRAJGANJ</item>
+        <item>MAHUA</item>
+        <item>MAINPURI</item>
+        <item>MAKURDI</item>
+        <item>MALAPPURAM</item>
+        <item>MALDAH</item>
+        <item>MALKANGIRI</item>
+        <item>MAMIT</item>
+        <item>MAMIT COMMR.</item>
+        <item>MAMIT POLICE DISTRICT</item>
+        <item>MANDI</item>
+        <item>MANDLA</item>
+        <item>MANDSAUR</item>
+        <item>MANGALORE</item>
+        <item>MANGALURU</item>
+        <item>MANIPUR TOTAL</item>
+        <item>MANSA</item>
+        <item>MAPUSA</item>
+        <item>MARIGAON</item>
+        <item>MATHURA</item>
+        <item>MAU</item>
+        <item>MAURANIPUR</item>
+        <item>MAYURBHANJ</item>
+        <item>MEDAK</item>
+        <item>MEERUT</item>
+        <item>MIRZAPUR</item>
+        <item>MIZORAM</item>
+        <item>MOGA</item>
+        <item>MOKOKCHUNG</item>
+        <item>MON</item>
+        <item>MON COMMR.</item>
+        <item>MON POLICE DISTRICT</item>
+        <item>MONCHING</item>
+        <item>MORADABAD</item>
+        <item>MORBI</item>
+        <item>MORENA</item>
+        <item>MORIGAON</item>
+        <item>MUKTSAR</item>
+        <item>MUMBAI</item>
+        <item>MUMBAI COMMR.</item>
+        <item>MUNGELI</item>
+        <item>MUNGER</item>
+        <item>MUNNAR</item>
+        <item>MURSHIDABAD</item>
+        <item>MURSHIDABAD DISTRICT</item>
+        <item>MUZAFFARNAGAR</item>
+        <item>MUZAFFARPUR</item>
+        <item>MYMENSINGH</item>
+        <item>N.C.HILLS</item>
+        <item>NADIA</item>
+        <item>NAGAON</item>
+        <item>NAGAPATTINAM</item>
+        <item>NAGAUR</item>
+        <item>NAGPUR</item>
+        <item>NAINITAL</item>
+        <item>NAJIBABAD</item>
+        <item>NAKHRA</item>
+        <item>NAKPUR RLY.</item>
+        <item>NALANDA</item>
+        <item>NALBARI</item>
+        <item>NALGONDA</item>
+        <item>NAMAKKAL</item>
+        <item>NANDURBAR</item>
+        <item>NARAYANPUR</item>
+        <item>NARMADA</item>
+        <item>NARNAUL</item>
+        <item>NAROULI</item>
+        <item>NARSINGHPUR</item>
+        <item>NASHIK</item>
+        <item>NASHIK RURAL</item>
+        <item>NASIK RLY.</item>
+        <item>NATRAJ</item>
+        <item>NAVSARI</item>
+        <item>NAWADA</item>
+        <item>NAWANSHAHR</item>
+        <item>NEAR RAILWAY STATION</item>
+        <item>NEEMUCH</item>
+        <item>NEW DELHI</item>
+        <item>NEW DELHI CITY</item>
+        <item>NEW DELHI DISTRICT</item>
+        <item>NEWAI</item>
+        <item>NICOBARS</item>
+        <item>NIGAUR</item>
+        <item>NILGIRIS</item>
+        <item>NIMACH</item>
+        <item>NIZAMABAD</item>
+        <item>NORTH</item>
+        <item>NORTH 24 PARGANAS</item>
+        <item>NORTH AND MIDDLE ANDAMAN</item>
+        <item>NORTH CACHAR</item>
+        <item>NORTH DISTRICT</item>
+        <item>NORTH EAST</item>
+        <item>NORTH EAST DELHI</item>
+        <item>NORTH GARO HILLS</item>
+        <item>NORTH GOA</item>
+        <item>NORTH KANNADA</item>
+        <item>NORTH KARIMNAGAR</item>
+        <item>NORTH LAKHIMPUR</item>
+        <item>NORTH SIKKIM</item>
+        <item>NORTH TRIPURA</item>
+        <item>NORTH WEST</item>
+        <item>NORTH WEST DELHI</item>
+        <item>NORTH WEST GARO HILLS</item>
+        <item>NORTH WEST GOA</item>
+        <item>NORTH WEST LAKHIMPUR</item>
+        <item>NORTH WEST TRIPURA</item>
+        <item>NORTH24PARGANAS</item>
+        <item>NORTHGOA</item>
+        <item>NORTHTRIPURA</item>
+        <item>NUAPADA</item>
+        <item>NUAPARA</item>
+        <item>NULL</item>
+        <item>NVS</item>
+        <item>ODDA</item>
+        <item>ODDANCHATRAM</item>
+        <item>ODISHA TOTAL</item>
+        <item>ONGOLE</item>
+        <item>ORAI</item>
+        <item>OSMANABAD</item>
+        <item>PALAKKAD</item>
+        <item>PALANPUR</item>
+        <item>PALGHAR</item>
+        <item>PALI</item>
+        <item>PALWAL</item>
+        <item>PANCHKULA</item>
+        <item>PANIPAT</item>
+        <item>PANNA</item>
+        <item>PANVEL</item>
+        <item>PAPUM PARE</item>
+        <item>PARBHANI</item>
+        <item>PARGI</item>
+        <item>PARNAMI</item>
+        <item>PASHCHIM CHAMPARAN</item>
+        <item>PASHCHIMI SIKKIM</item>
+        <item>PATAN</item>
+        <item>PATIALA</item>
+        <item>PATNA</item>
+        <item>PATNA CITY</item>
+        <item>PATNA RURAL</item>
+        <item>PATNA SAHIB</item>
+        <item>PATRIKA</item>
+        <item>PAURI GARHWAL</item>
+        <item>PEDAPALLI</item>
+        <item>PEN</item>
+        <item>PENCH</item>
+        <item>PERAMBALUR</item>
+        <item>PETA</item>
+        <item>PILANI</item>
+        <item>PILIBHIT</item>
+        <item>PITHORAGARH</item>
+        <item>POLICELINES</item>
+        <item>POLICELINESC</item>
+        <item>POLICESTATION</item>
+        <item>PONNERI</item>
+        <item>POONCH</item>
+        <item>PORBANDAR</item>
+        <item>PRAKASHAM</item>
+        <item>PRATAPGARH</item>
+        <item>PRATAPGARH U.P</item>
+        <item>PUDUKKOTTAI</item>
+        <item>PULWAMA</item>
+        <item>PUNE</item>
+        <item>PUNE RURAL</item>
+        <item>PURBA BARDHAMAN</item>
+        <item>PURBA MEDINIPUR</item>
+        <item>PURNEA</item>
+        <item>PURI</item>
+        <item>PURULIA</item>
+        <item>PURWANCHAL</item>
+        <item>PUSHKAR</item>
+        <item>PUSHPRAJGARH</item>
+        <item>RAE BARELI</item>
+        <item>RAIGAD</item>
+        <item>RAIGARH</item>
+        <item>RAIGARH COMMR.</item>
+        <item>RAIGARH RURAL</item>
+        <item>RAIGARH(UT)</item>
+        <item>RAIGARH(UT) RURAL</item>
+        <item>RAIGARH(UT) URBAN</item>
+        <item>RAIGARH(COMM.)</item>
+        <item>RAIGARH(RU.)</item>
+        <item>RAIGARH(UT) RURAL</item>
+        <item>RAIGARH(UT) URBAN</item>
+        <item>RAIGARH(UT)URBAN</item>
+        <item>RAIGARHCOMMR.</item>
+        <item>RAIGARHRURAL</item>
+        <item>RAIGARHURBAN</item>
+        <item>RAIGUNJ</item>
+        <item>RAIGUR</item>
+        <item>RAIPUR</item>
+        <item>RAJAHMUNDRY</item>
+        <item>RAJANANDGAON</item>
+        <item>RAJAPALAYAM</item>
+        <item>RAJASTHAN</item>
+        <item>RAJKOT</item>
+        <item>RAJSAMAND</item>
+        <item>RAMANAGARAM</item>
+        <item>RAMANATHAPURAM</item>
+        <item>RAMGARH</item>
+        <item>RAMPUR</item>
+        <item>RAMTEK</item>
+        <item>RANCHI</item>
+        <item>RANGAREDDY</item>
+        <item>RATANPUR</item>
+        <item>RATLAM</item>
+        <item>RATNAGIRI</item>
+        <item>RAVER</item>
+        <item>REASI</item>
+        <item>REEWA</item>
+        <item>REWA RAILWAY</item>
+        <item>REWARI</item>
+        <item>RI BHOI</item>
+        <item>ROBERTSGANJ</item>
+        <item>ROHTAK</item>
+        <item>ROHTAS</item>
+        <item>ROMAI</item>
+        <item>ROORKEE</item>
+        <item>RUDRAPRAYAG</item>
+        <item>RUPNAGAR</item>
+        <item>S.A.S. NAGAR</item>
+        <item>SABARKANTHA</item>
+        <item>SAGAR</item>
+        <item>SAGAR (M.P)</item>
+        <item>SAHEBGANJ</item>
+        <item>SAHIBGANJ</item>
+        <item>SAHJANWA</item>
+        <item>SAIHA</item>
+        <item>SAJAD HAJIN</item>
+        <item>SALEM</item>
+        <item>SAMBALPUR</item>
+        <item>SAMBA</item>
+        <item>SAMBHAL</item>
+        <item>SAMDRUP JONGKAR</item>
+        <item>SAMMALKOT</item>
+        <item>SAMTSE</item>
+        <item>SANGLI</item>
+        <item>SANGRUR</item>
+        <item>SANT KABEER NAGAR</item>
+        <item>SANT RAVIDAS NAGAR</item>
+        <item>SAPUTARA</item>
+        <item>SARAI</item>
+        <item>SARAN</item>
+        <item>SARDARSHAHAR</item>
+        <item>SARGUJA</item>
+        <item>SASARAM</item>
+        <item>SATARA</item>
+        <item>SATHANKULAM</item>
+        <item>SATNA</item>
+        <item>SATNA (M.P)</item>
+        <item>SATPURA</item>
+        <item>SATUR</item>
+        <item>SAWAIMADHOPUR</item>
+        <item>SAWANTWADI</item>
+        <item>SECUNDERABAD RLY.</item>
+        <item>SEHORE</item>
+        <item>SENAPATI</item>
+        <item>SEONI</item>
+        <item>SEPAHIJALA</item>
+        <item>SEWARD</item>
+        <item>SHAHDOL</item>
+        <item>SHAHJAHANPUR</item>
+        <item>SHAJAPUR</item>
+        <item>SHAMLI</item>
+        <item>SHANTINAGAR</item>
+        <item>SHARANPUR</item>
+        <item>SHIKOHABAD</item>
+        <item>SHIMLA</item>
+        <item>SHIMOGA</item>
+        <item>SHIRPUR</item>
+        <item>SHIVPURI</item>
+        <item>SHOLAPUR</item>
+        <item>SHRIGONDA</item>
+        <item>SHRIMADHOPUR</item>
+        <item>SIDDAPUR</item>
+        <item>SIKAR</item>
+        <item>SIKKIM</item>
+        <item>SILCHAR</item>
+        <item>SILIGURI</item>
+        <item>SIMDEGA</item>
+        <item>SIMLA</item>
+        <item>SIMLA RAILWAY</item>
+        <item>SINDUDURG</item>
+        <item>SINDURG</item>
+        <item>SINGRAULI</item>
+        <item>SIRMAUR</item>
+        <item>SIRMOUR</item>
+        <item>SIRSA</item>
+        <item>SITAMARHI</item>
+        <item>SITAPUR</item>
+        <item>SIVAGANGA</item>
+        <item>SIVAKASI</item>
+        <item>SIWAN</item>
+        <item>SOLAN</item>
+        <item>SOLAPUR</item>
+        <item>SOMNATH</item>
+        <item>SONBHADRA</item>
+        <item>SONIPAT</item>
+        <item>SONPUR</item>
+        <item>SONYATHAN</item>
+        <item>SONYATHAN(HALDIA)</item>
+        <item>SOUTH</item>
+        <item>SOUTH 24 PARGANAS</item>
+        <item>SOUTH ANDAMAN</item>
+        <item>SOUTH BASTAR DANTEWARA</item>
+        <item>SOUTH BASTAR DANTEWARA (D)</item>
+        <item>SOUTH CACHAR</item>
+        <item>SOUTH DISTRICT</item>
+        <item>SOUTH EAST</item>
+        <item>SOUTH EAST DELHI</item>
+        <item>SOUTH GARO HILLS</item>
+        <item>SOUTH GOA</item>
+        <item>SOUTH KANNADA</item>
+        <item>SOUTH KASHMIR</item>
+        <item>SOUTH LAKHIMPUR</item>
+        <item>SOUTH SALMARA MANKACHAR</item>
+        <item>SOUTH SIKKIM</item>
+        <item>SOUTH TRIPURA</item>
+        <item>SOUTH WEST</item>
+        <item>SOUTH WEST DELHI</item>
+        <item>SOUTH WEST GARO HILLS</item>
+        <item>SOUTH WEST GOA</item>
+        <item>SOUTH WEST LAKHIMPUR</item>
+        <item>SOUTH WEST TRIPURA</item>
+        <item>SOUTH24PARGANAS</item>
+        <item>SOUTHGOA</item>
+        <item>SOUTHTRIPURA</item>
+        <item>SOUTHTRIPURA</item>
+        <item>SOUTHTRIPURA DISTRICT</item>
+        <item>SOUTHTRIPURA(TR)</item>
+        <item>SRIGANGA</item>
+        <item>SRIKAKULAM</item>
+        <item>SRIKALAHASTI</item>
+        <item>SRINAGAR</item>
+        <item>SRIRANGAM</item>
+        <item>SULTANPUR</item>
+        <item>SUNDARGARH</item>
+        <item>SUPAUL</item>
+        <item>SURAJPUR</item>
+        <item>SURAT</item>
+        <item>SURENDRANAGAR</item>
+        <item>SURGUJA</item>
+        <item>SURI</item>
+        <item>SURPUR</item>
+        <item>SURUTKAL</item>
+        <item>SURYAPET</item>
+        <item>T.S.R</item>
+        <item>TAMLUK</item>
+        <item>TAMNAR</item>
+        <item>TAMNAR (COMMR.)</item>
+        <item>TAMNAR (RURAL)</item>
+        <item>TAMNAR URBAN</item>
+        <item>TAMNAR(COMM.)</item>
+        <item>TAMNAR(RU.)</item>
+        <item>TAMNAR(UR.)</item>
+        <item>TAMNAR(COMM.)</item>
+        <item>TAMNAR(RU.)</item>
+        <item>TAMNAR(UR.)</item>
+        <item>TAMNAR(COMM.)</item>
+        <item>TAMNAR(RU.)</item>
+        <item>TAMNAR(UR.)</item>
+        <item>TAMNAR(COMM.)</item>
+        <item>TAMNAR(RU.)</item>
+        <item>TAMNAR(UR.)</item>
+        <item>TAMNARCOMMR.</item>
+        <item>TAMNARURBAN</item>
+        <item>TAMNARUZA</item>
+        <item>TANAKPUR</item>
+        <item>TANGLA</item>
+        <item>TARAKESHWAR</item>
+        <item>TARAPUR</item>
+        <item>TAWANG</item>
+        <item>TAWARANLA</item>
+        <item>TAWARI</item>
+        <item>TELANGANA</item>
+        <item>TELANGANA TOTAL</item>
+        <item>TEZPUR</item>
+        <item>THAKURNAGAR</item>
+        <item>THANE</item>
+        <item>THANJAVUR</item>
+        <item>THE NILGIRIS</item>
+        <item>THENI</item>
+        <item>THIRU KARUR</item>
+        <item>THIRU VELLORE</item>
+        <item>THIRUKKANNAMANGAI</item>
+        <item>THIRUKOILUR</item>
+        <item>THIRUKOVILUR</item>
+        <item>THIRUMANGALAM</item>
+        <item>THIRUMAYAM</item>
+        <item>THIRUNAGAR</item>
+        <item>THIRUNALLAR</item>
+        <item>THIRUNELVELI</item>
+        <item>THIRUPAPULIYUR</item>
+        <item>THIRUPORUR</item>
+        <item>THIRUTHANI</item>
+        <item>THIRUVANANTHAPURAM</item>
+        <item>THIRUVARUR</item>
+        <item>THIRUVERUMBUR</item>
+        <item>THOOTHUKKUDI</item>
+        <item>THRISSUR</item>
+        <item>TIKAMGARH</item>
+        <item>TINSUKIA</item>
+        <item>TIRUCHENDUR</item>
+        <item>TIRUCHIRAPPALLI</item>
+        <item>TIRUNELVELI</item>
+        <item>TIRUPATHI</item>
+        <item>TIRUPPUR</item>
+        <item>TIRUVANNAMALAI</item>
+        <item>TIRUVERUMBUR</item>
+        <item>TITILAGARH</item>
+        <item>TITLAGARH</item>
+        <item>TOKALAPALLY</item>
+        <item>TUMKUR</item>
+        <item>TUMKUR RURAL</item>
+        <item>TUMSAR</item>
+        <item>TUMUDIBAND</item>
+        <item>TUMUDIBANDA</item>
+        <item>TUMUDIBANDHA</item>
+        <item>TUNG</item>
+        <item>TUNI</item>
+        <item>TURA</item>
+        <item>TUTICORIN</item>
+        <item>UDAIPUR</item>
+        <item>UDAMANDAL</item>
+        <item>UDHAM SINGH NAGAR</item>
+        <item>UDHAMPUR</item>
+        <item>UDHAMSINGHNAGAR</item>
+        <item>UDUPI</item>
+        <item>UDUMALAIPETTAI</item>
+        <item>UJJAIN</item>
+        <item>UKHRUL</item>
+        <item>UKLON</item>
+        <item>ULHASNAGAR</item>
+        <item>ULIPUR</item>
+        <item>ULUBERIA</item>
+        <item>UMARIA</item>
+        <item>UNA</item>
+        <item>UNAKOTI</item>
+        <item>UNNAO</item>
+        <item>UPHALI</item>
+        <item>UPHALI DISTRICT</item>
+        <item>UPPER DIBANG VALLEY</item>
+        <item>UPPER SIANG</item>
+        <item>UPPER SUBANSIRI</item>
+        <item>UPPER ZAWARI</item>
+        <item>UPPER ZAWARII</item>
+        <item>UTTAR DINAJPUR</item>
+        <item>UTTAR KASHI</item>
+        <item>UTTAR KASHI RAILWAY</item>
+        <item>UTTARAKHAND</item>
+        <item>UTTARKASHI</item>
+        <item>UTTARKASHI RLY.</item>
+        <item>UTTARPARA</item>
+        <item>VADODARA</item>
+        <item>VADU</item>
+        <item>VAILANKANNI</item>
+        <item>VAISHALI</item>
+        <item>VAISHNO DEVI</item>
+        <item>VALPARAI</item>
+        <item>VALSAD</item>
+        <item>VARANASI</item>
+        <item>VASAI</item>
+        <item>VASCO</item>
+        <item>VEDARANYAM</item>
+        <item>VELLORE</item>
+        <item>VENGURLE</item>
+        <item>VEPAGUNTA</item>
+        <item>VERAVAL</item>
+        <item>VIDISHA</item>
+        <item>VIJAYAWADA</item>
+        <item>VIJAYPUR</item>
+        <item>VIKARABAD</item>
+        <item>VILLUPURAM</item>
+        <item>VIRAR</item>
+        <item>VISAKHAPATNAM</item>
+        <item>VISAKHAPATNAM COMMR.</item>
+        <item>VISAKHAPATNAM RURAL</item>
+        <item>VIZIANAGARAM</item>
+        <item>WARDHA</item>
+        <item>WARDHA RURAL</item>
+        <item>WASHIM</item>
+        <item>WASHIM RURAL</item>
+        <item>WAYANAD</item>
+        <item>WEST</item>
+        <item>WEST GODAVARI</item>
+        <item>WEST KAMENG</item>
+        <item>WEST KARBI ANGLONG</item>
+        <item>WEST TRIPURA</item>
+        <item>WESTMIDNAPORE</item>
+        <item>WOKHA</item>
+        <item>Y.S.R. KADAPA</item>
+        <item>YADGIR</item>
+        <item>YAMUNA NAGAR</item>
+        <item>YAVATMAL</item>
+        <item>YAVATMAL RURAL</item>
+        <item>ZUNHEBOTO</item>
+
+    </string-array><string-array name="choices4">
+
+        <item>2011</item>
+        <item>2012</item>
+        <item>2013</item>
+        <item>2014</item>
+        <item>2015</item>
+        <item>2016</item>
+        <item>2017</item>
+        <item>2018</item>
+        <item>2019</item>
+        <item>2020</item>
+        <item>2021</item>
+        <item>2022</item>
+
+    </string-array><string-array name="choices3">
+
+        <item>Murder</item>
+        <item>Rape</item>
+        <item>Kidnapping and Abduction</item>
+        <item>Dacoity</item>
+        <item>Robbery</item>
+        <item>Burglary</item>
+        <item>Arson</item>
+        <item>Dowry Deaths</item>
+        <item>Assault on Women with Intent to Outrage Her Modesty</item>
+        <item>Cruelty by Husband or His Relatives</item>
+        <item>Causing Death by Negligence</item>
+
+    </string-array></file><file path="C:\p\systemx64\app\src\main\res\values\colors.xml" qualifiers=""><color name="black">#FF000000</color><color name="white">#FFFFFFFF</color></file><file path="C:\p\systemx64\app\src\main\res\values\strings.xml" qualifiers=""><string name="app_name">systemx64</string></file><file path="C:\p\systemx64\app\src\main\res\values\themes.xml" qualifiers=""><style name="Base.Theme.Systemx64" parent="Theme.Material3.DayNight.NoActionBar">
+        
+        
+    </style><style name="Theme.Systemx64" parent="Base.Theme.Systemx64"/></file><file path="C:\p\systemx64\app\src\main\res\values-night\themes.xml" qualifiers="night-v8"><style name="Base.Theme.Systemx64" parent="Theme.Material3.DayNight.NoActionBar">
+        
+        
+    </style></file><file name="backup_rules" path="C:\p\systemx64\app\src\main\res\xml\backup_rules.xml" qualifiers="" type="xml"/><file name="data_extraction_rules" path="C:\p\systemx64\app\src\main\res\xml\data_extraction_rules.xml" qualifiers="" type="xml"/><file name="custom_spinner_dropdown_item" path="C:\p\systemx64\app\src\main\res\layout\custom_spinner_dropdown_item.xml" qualifiers="" type="layout"/><file name="custom_spinner_dropdown_item2" path="C:\p\systemx64\app\src\main\res\layout\custom_spinner_dropdown_item2.xml" qualifiers="" type="layout"/></source></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\p\systemx64\app\src\debug\res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug" generated-set="debug$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\p\systemx64\app\src\debug\res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="generated$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\p\systemx64\app\build\generated\res\resValues\debug"/><source path="C:\p\systemx64\app\build\generated\res\processDebugGoogleServices"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="generated" generated-set="generated$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\p\systemx64\app\build\generated\res\resValues\debug"/><source path="C:\p\systemx64\app\build\generated\res\processDebugGoogleServices"><file path="C:\p\systemx64\app\build\generated\res\processDebugGoogleServices\values\values.xml" qualifiers=""><string name="gcm_defaultSenderId" translatable="false">431742396431</string><string name="google_api_key" translatable="false">AIzaSyAXXzjEVVzMb5wq1iox1wH8EJwOWy8tBUk</string><string name="google_app_id" translatable="false">1:431742396431:android:4b7f9a5c48ba05b0ab5b7a</string><string name="google_crash_reporting_api_key" translatable="false">AIzaSyAXXzjEVVzMb5wq1iox1wH8EJwOWy8tBUk</string><string name="google_storage_bucket" translatable="false">systemx64-91600.appspot.com</string><string name="project_id" translatable="false">systemx64-91600</string></file></source></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="res-processDebugGoogleServices$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"/><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="res-processDebugGoogleServices" generated-set="res-processDebugGoogleServices$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"/><mergedItems/></merger>

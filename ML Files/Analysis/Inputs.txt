@@ -1,0 +1,24 @@
+crime type -> IPCC,MURDER,RAPE,
+locatation -> latlong,landmark(optional) State and District
+date -> year
+victim information -> age,sex,no-of-cases
+crimanal-info, (optinol)
+crime season
+	strike
+	curfew
+	elections
+	festive seasons
+	Religious Gatherings and Pilgrimages
+
+
+Analysis:
+crimetype
+state
+district
+year
+gender
+season
+age
+
+
+
