@@ -85,25 +85,12 @@ public class Policeinput extends AppCompatActivity {
 
                 // Call the test method with selected values from dropdowns
                 List<HashMap<String, Integer>> result = test(crimetypee, statee, districtee, yearee, "Male", "STRIKE", 52);
-                List<HashMap<String, Object>> topDistrictDetails = getTopDistrictDetails("RAPE", "ANDHRA PRADESH", "NELLORE", 2011, "Male", "STRIKE", 52);
+
 
 // ArrayLists to store state, district, and rape count
 
 
 // Loop through all districts
-                for (HashMap<String, Object> districtDetails : topDistrictDetails) {
-                    String state = (String) districtDetails.get("STATE");
-                    String district = (String) districtDetails.get("DISTRICT");
-                    int rapeCount = (int) districtDetails.get("RAPE");
-
-                    // Store state, district, and rape count in respective ArrayLists
-                    states.add(state);
-                    districts.add(district);
-                    rapeCounts.add(rapeCount);
-                    Log.d("Top District Details", "State: " + state);
-                    Log.d("Top District Details", "District: " + district);
-                    Log.d("Top District Details", "Rape Count: " + rapeCount);
-                }
 
 // Now you have states, districts, and rapeCounts ArrayLists containing the respective data
 
@@ -130,7 +117,7 @@ public class Policeinput extends AppCompatActivity {
                     Intent intent=new Intent(Policeinput.this,MapActivity.class);
                     intent.putExtra("locationlist",uu);
                     intent.putExtra("districtlist",districts);
-                    intent.putExtra("statelist",states);
+
                     intent.putExtra("rapecountlist",rapeCounts);
                     logOrProcessLatLng(uu);
                     startActivity(intent);
@@ -206,6 +193,7 @@ public class Policeinput extends AppCompatActivity {
             Data row = convertToData(rowData);
             if (row.getState().equals(state)) {
                 String currentDistrict = row.getDistrict();
+
                 if (!addedDistricts.contains(currentDistrict)) {
                     int crimeCount = 0;
                     for (String[] innerRowData : dataList2) {
@@ -216,6 +204,9 @@ public class Policeinput extends AppCompatActivity {
                     }
                     HashMap<String, Integer> districtMap = new HashMap<>();
                     districtMap.put(currentDistrict, crimeCount);
+
+                    districts.add(currentDistrict);
+                    rapeCounts.add(crimeCount);
                     topDistricts.add(districtMap);
                     addedDistricts.add(currentDistrict);
                 }
@@ -231,7 +222,6 @@ public class Policeinput extends AppCompatActivity {
 
         return topDistricts.subList(0, Math.min(5, topDistricts.size()));
     }
-
     private Data convertToData(String[] rowData) {
 
         String state = rowData[0];
@@ -304,50 +294,6 @@ public class Policeinput extends AppCompatActivity {
 
     public void main3(String placeName) {
         new GeocodingTask().execute(placeName);
-    }
-    public List<HashMap<String, Object>> getTopDistrictDetails(String crimetype, String state, String district, int year, String gender, String season, int age) {
-        List<HashMap<String, Object>> topDistrictDetails = new ArrayList<>();
-        Set<String> addedDistricts = new HashSet<>();
-
-        for (String[] rowData : dataList2) {
-            Data row = convertToData(rowData);
-            if (row.getState().equals(state)) {
-                String currentDistrict = row.getDistrict();
-                if (!addedDistricts.contains(currentDistrict)) {
-                    int totalIPCcrimes = 0;
-                    int rapeCount = 0;
-                    // You may need to define other variables here depending on your dataset
-
-                    for (String[] innerRowData : dataList2) {
-                        Data innerRow = convertToData(innerRowData);
-                        if (innerRow.getState().equals(state) && innerRow.getDistrict().equals(currentDistrict)) {
-                            totalIPCcrimes += innerRow.getCrimeCount();
-                            if (innerRow.getState().equals(state) && innerRow.getDistrict().equals(currentDistrict)) {
-                                rapeCount += innerRow.getCrimeCount();
-                            }
-                            // Update other attributes accordingly
-                        }
-                    }
-                    HashMap<String, Object> districtDetails = new HashMap<>();
-                    districtDetails.put("STATE", state);
-                    districtDetails.put("DISTRICT", currentDistrict);
-                    districtDetails.put("RAPE", rapeCount);
-                    // Add other attributes here
-                    districtDetails.put("TOTAL IPC CRIMES", totalIPCcrimes);
-                    topDistrictDetails.add(districtDetails);
-                    addedDistricts.add(currentDistrict);
-                }
-            }
-        }
-
-        topDistrictDetails.sort(new Comparator<HashMap<String, Object>>() {
-            @Override
-            public int compare(HashMap<String, Object> o1, HashMap<String, Object> o2) {
-                return (int) o2.get("TOTAL IPC CRIMES") - (int) o1.get("TOTAL IPC CRIMES");
-            }
-        });
-
-        return topDistrictDetails.subList(0, Math.min(5, topDistrictDetails.size()));
     }
 
 
