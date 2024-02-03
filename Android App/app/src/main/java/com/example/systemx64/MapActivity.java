@@ -1,6 +1,8 @@
 package com.example.systemx64;
 
 import android.content.DialogInterface;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -101,6 +103,28 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
                     }
                 });
         AlertDialog dialog = builder.create();
+        builder.setPositiveButton("Select as Destination", (dialoge, which) -> {
+            // Call the method to get directions to the selected user's location
+            double lat=15.4818309;
+           double lon=74.9325569;
+
+            String iam=lat+","+lon;
+            LatLng ln=locationList.get(position);
+           double rlat=ln.latitude;
+           double rlong=ln.longitude;
+           String user=rlat+","+rlong;
+
+
+            Uri uri=Uri.parse("https://www.google.com/maps/dir/"+iam+"/"+user);
+            Intent intent=new Intent(Intent.ACTION_VIEW,uri);
+            intent.setPackage("com.google.android.apps.maps");
+            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            startActivity(intent);
+
+            dialoge.dismiss();
+        });
+        builder.setNegativeButton("Cancel", (dialoge, which) -> dialog.dismiss());
+        builder.show();
         dialog.show();
     }
 }
