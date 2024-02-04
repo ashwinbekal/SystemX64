@@ -6,7 +6,7 @@
 ![CrimeEye](imageintro.jpg)
 
 **CrimeEye: A Secure and Data-Driven Approach to Safer Communities**  
-CrimeEye is a revolutionary online application and Android mobile app designed to enhance crime prevention, community engagement, and law enforcement efficiency through innovative technology solutions. With a comprehensive approach that combines deep learning, and mapping technologies, CrimeEye aims to optimize resource allocation, improve crime data management, and prioritize user security, fostering safer and more secure communities.
+CrimeEye is a revolutionary online application and Android mobile app designed to enhance crime prevention, community engagement, and law enforcement efficiency through innovative technology solutions. With a comprehensive approach that combines deep learning and mapping technologies, CrimeEye aims to optimize resource allocation, improve crime data management, and prioritize user security, fostering safer and more secure communities.
 
 ## Tech Stacks
 
