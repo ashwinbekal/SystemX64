@@ -1,9 +1,6 @@
 # SystemX64
 CrimeEye: Criminal Analytics and e-FIR filing platform!
-
-<div align="center">
-  ![image](https://github.com/ashwinbekal/SystemX64/assets/97862377/148cc1b4-0aa7-4cd0-ae83-041773dd4f97)
-</div>
+Watch our Demo Video @ [YouTube](https://youtu.be/q-Dl-vxWIxo)
 
 <h1 align="center">CrimeEye: A Secure and Data-Driven Approach to Safer Communities</h1>
 <h3 align="center">CrimeEye is a revolutionary online application and Android mobile app designed to enhance crime prevention, community engagement, and law enforcement efficiency through innovative technology solutions. With a comprehensive approach that combines deep learning, and mapping technologies, CrimeEye aims to optimize resource allocation, improve crime data management, and prioritize user security, fostering safer and more secure communities.</h3>
