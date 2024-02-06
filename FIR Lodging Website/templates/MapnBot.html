@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIR Information</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/bootstrap.min.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='styles.css')}}">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&family=Vina+Sans&display=swap" rel="stylesheet">
+    <link rel="icon" href="../static/anchor.png" type="image/x-icon">
+
+</head>
+
+<body class="vh-100">
+    <div class="col d-flex align-items-center justify-content-center" style="min-height: 100vh;">
+        <form action="/fir_search" method="post">
+            <div class="p-5 py-1 pt-5">
+                <center>
+                    <div style="width: 1700px;" class="test border border-white p-3 ">
+                        <iframe style="width: 700px;height: 700px; border-radius: 20px; border: 5px solid goldenrod;" src="https://police-bot145-iwdlooecs7m7k.azurewebsites.net/" frameborder="0"></iframe>&ensp;&ensp;<iframe style="width: 700px;height: 700px; border-radius: 20px;border: 5px solid goldenrod;" src="https://brave-coast-0a2c7cd10.4.azurestaticapps.net/" frameborder="0"></iframe><br><br>
+                        <a href="http://127.0.0.1:5000/" class="btn btn-info align-items-right">
+                            <h3>HOME PAGE</h3>
+                        </a>
+                    </div>
+                    
+                </center>
+            </div>
+            
+        </form>
+    </div>
+
+    <script>
+        function copyIP(){
+            var text=document.getElementById('copy-id');
+            var range=document.createRange();
+            range.selectNode(text);
+            window.getSelection().removeAllRanges();
+            window.getSelection().addRange(range);
+            document.execCommand('copy');
+            window.getSelection().removeAllRanges();
+            alert('FIR ID: '+text.innerText+' successfully copied!');
+            window.location.href='http://127.0.0.1:5000/';
+        }
+
+    </script>
+</body>
+
+</html>

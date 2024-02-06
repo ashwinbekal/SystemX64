@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIR Information</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/bootstrap.min.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='styles.css')}}">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&family=Vina+Sans&display=swap" rel="stylesheet">
+    <link rel="icon" href="../static/anchor.png" type="image/x-icon">
+
+</head>
+
+<body class="vh-100">
+    <div class="col d-flex align-items-center justify-content-center" style="min-height: 100vh;">
+        <form action="/fir_search" method="post">
+            <div class="p-5 py-1 pt-5">
+                <div style="width: 1700px;" class="test border border-white p-3 ">
+                    <h1 class="phishhead text-center px-5 pt-2 pb-2">Search your FIR</h1>
+                    <h2 class="phish text-white text-white px-5 pt-3 pb-2">Enter the following details</h2>
+                    <div class="input-group input-group-lg mb-3 pt-2 px-5">
+                        <input type="text" class="form-control place" autofocus placeholder="Enter the Registered User ID" aria-label="Username" aria-describedby="basic-addon1" name="uid" required>&ensp;&ensp;
+                        <input type="text" class="form-control place" autofocus placeholder="Enter your FIR Registration ID" aria-label="Username" aria-describedby="basic-addon1" name="fir_id" required>&ensp;&ensp;
+                        <input type="text" class="form-control place" autofocus placeholder="Enter your Contact Number" aria-label="Username" aria-describedby="basic-addon1" name="cnumber" required>                 
+                    </div>
+                    <center>
+                        <button type="submit" class="btn btn-success">
+                            <h3>GET DETAILS</h3>
+                        </button>&ensp;&ensp;
+                        <a href="http://127.0.0.1:5000/" class="btn btn-info align-items-right">
+                          <h3>HOME PAGE</h3>
+                      </a></center>
+                        <br><h2 class="phish text-white text-white px-5 pt-3 pb-2">{{c_name}}</h2>
+                        <h2 class="phish text-white text-white px-5 pt-3 pb-2">{{c_info}}</h2><br>
+                        <center><h3 style="color: brown;">{{warning}}</h3></center>
+                        <br>
+                        <center>
+                        <div class="container">
+                            <div class="row">
+                              <div class="col" style="color: goldenrod; font-size: 30px; font-weight: bolder;">
+                                {{a1}}
+                              </div>
+                              <div class="col" style="color: goldenrod; font-size: 30px; font-weight: bolder;">
+                                {{a2}}
+                              </div>
+                              <div class="col" style="color: goldenrod; font-size: 30px; font-weight: bolder;">
+                                {{a3}}
+                              </div>
+                              <div class="col" style="color: goldenrod; font-size: 30px; font-weight: bolder;">
+                                {{a4}}
+                              </div>
+                              <div class="col" style="color: goldenrod; font-size: 30px; font-weight: bolder;">
+                                {{a5}}
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col" style="color: rgb(255, 255, 255); font-size: 24px;">
+                                {{a}}
+                              </div>
+                              <div class="col" style="color: rgb(255, 255, 255); font-size: 24px;">
+                                {{b}}
+                              </div>
+                              <div class="col" style="color: rgb(255, 255, 255); font-size: 24px;">
+                                {{c}}
+                              </div>
+                              <div class="col" style="color: rgb(255, 255, 255); font-size: 24px;">
+                                {{d}}
+                              </div>
+                              <div class="col" style="color: rgb(255, 255, 255); font-size: 24px;">
+                                {{e}}
+                              </div>
+                            </div>
+                          </div>
+                          
+                    </center>
+                    <div class="input-group input-group-lg mb-3 px-2">
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </form>
+    </div>
+
+    <script>
+        function copyIP(){
+            var text=document.getElementById('copy-id');
+            var range=document.createRange();
+            range.selectNode(text);
+            window.getSelection().removeAllRanges();
+            window.getSelection().addRange(range);
+            document.execCommand('copy');
+            window.getSelection().removeAllRanges();
+            alert('FIR ID: '+text.innerText+' successfully copied!');
+            window.location.href='http://127.0.0.1:5000/';
+        }
+
+    </script>
+</body>
+
+</html>
